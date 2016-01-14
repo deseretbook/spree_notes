@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_notes'
-  s.version     = '0.0.1'
+  s.version     = '0.0.9999'
   s.summary     = 'Allows admins to add custom notes to orders and users'
   s.description = 'Allows admins to add custom notes to orders and users'
   s.required_ruby_version = '>= 1.9.3'
@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   # s.has_rdoc = true
+
+  s.add_runtime_dependency 'solidus_core', '~> 1.1.0'
 
   s.add_development_dependency 'factory_girl', '4.4'
   s.add_development_dependency 'ffaker'

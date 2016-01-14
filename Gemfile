@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-spree_branch = "2-2-stable"
-gem 'spree_core', github: 'spree/spree', branch: spree_branch
-gem 'spree_backend', github: 'spree/spree', branch: spree_branch
-gem 'spree_api', github: 'spree/spree', branch: spree_branch
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: spree_branch
-gem 'spree_i18n', github: 'spree/spree_i18n', branch: spree_branch
+solidus_branch = "v1.1"
+gem 'solidus_core', github: 'solidusio/solidus', branch: solidus_branch
+gem 'solidus_backend', github: 'solidusio/solidus', branch: solidus_branch
+gem 'solidus_api', github: 'solidusio/solidus', branch: solidus_branch
+gem 'solidus_auth_devise'
+gem 'solidus_i18n'
 
 gemspec
