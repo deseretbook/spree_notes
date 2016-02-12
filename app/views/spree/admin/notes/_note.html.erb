@@ -3,7 +3,7 @@
     <%= fa_icon note.important ? 'exclamation-circle' : 'pencil-square-o' %>
   </div>
   <div class="note-content">
-    <%= note.body %>
+    <%= simple_format(h(note.body)) %>
   </div>
   <div class="note-footer">
     <% if defined?(show_order) && show_order %>
